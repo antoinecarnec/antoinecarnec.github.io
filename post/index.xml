@@ -27,6 +27,16 @@ import numpy as np import matplotlib.pyplot as plt r = np.arange(0, 2, 0.01) the
     </item>
     
     <item>
+      <title>Tests Galore</title>
+      <link>https://antoinecarnec.github.io/post/tests-galore/</link>
+      <pubDate>Wed, 06 Apr 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://antoinecarnec.github.io/post/tests-galore/</guid>
+      <description>Please work
+$$ \alpha + \beta $$</description>
+    </item>
+    
+    <item>
       <title>In-post APlayer Test</title>
       <link>https://antoinecarnec.github.io/post/in-post-aplayer-test/</link>
       <pubDate>Sun, 10 Jan 2021 00:00:00 +0800</pubDate>
