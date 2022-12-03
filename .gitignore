@@ -3,6 +3,8 @@ site/.hugo_build.lock
 .envrc
 site/.quarto
 site/.deno
+site/result
+site/public/
 build
 result/
 .git_old/

@@ -6,23 +6,57 @@
 //   'Microsoft YaHei', 'WenQuanYi Micro Hei', sans-serif;
 // $mono-font: 'Cascadia Code', 'SF Mono', 'Fira Code', 'Consolas', $body-font;
 // $title-font: 'Product Sans', $body-font;
-// $body-font-size: 16px;
+$body-font: 'Helvetica Neue','SF Pro Text',  'Helvetica'
+   'Arial', 'PingFang SC', 'Hiragino Sans GB', 'Source Han Sans CN', 'Source Han Sans SC',
+   'Microsoft YaHei', 'WenQuanYi Micro Hei', sans-serif;
+$mono-font: 'Cascadia Code', 'SF Mono', 'Fira Code', 'Consolas', $body-font;
+// $title-font: 'Product Sans', $body-font;
+$body-font-size: 20px;
 
-// $light-color-primary: #8aa2d3; // https://irocore.com/aofuji/
+// $light-color-primary: #8bbbbb; // https://irocore.com/aofuji/
 // $light-color-secondary: #8f82bc; // https://irocore.com/fujimurasaki/
 // $light-color-focus: #3b469b; // https://irocore.com/aomurasaki/
 // $light-color-mute: #9ea1a3; // https://irocore.com/suzu-iro/
 // $light-color-font: #3f4551; // https://irocore.com/konnezu/
 // $light-color-divider: #e5e2e4; // https://irocore.com/komachinezu/
-// $light-color-bg: #fffffd; // https://irocore.com/shiro/
-// $light-color-codebg: #f6f8fa; // GitHub
+// $light-color-bg: #e5e3e4; // https://irocore.com/shiro/
+// $light-color-primary: #3b4252; // https://irocore.com/aofuji/
+
+$light-color-primary: #6B9080; // https://irocore.com/aofuji/
+$light-color-secondary: #6B9080; // https://irocore.com/aofuji/
+// $light-color-secondary: #A4C3B2; // https://irocore.com/fujimurasaki/
+$light-color-focus: #6B9080; // https://irocore.com/aomurasaki/
+$light-color-mute: #9ea1a3; // https://irocore.com/suzu-iro/
+$light-color-font: #3f4551; // https://irocore.com/konnezu/
+$light-color-divider: #e5e2e4; // https://irocore.com/komachinezu/
+// $light-color-bg: #F6FFF8; // https://irocore.com/shiro/
+$light-color-codebg: #f6f8fa; // GitHub
 
 // $dark-color-primary: #8aa2d3; // https://irocore.com/aofuji/
 // $dark-color-secondary: #bab1df; // https://irocore.com/fujimurasaki/
 // $dark-color-focus: #e6e6e6; // https://irocore.com/shironezumi/
 // $dark-color-mute: #9ea1a3; // https://irocore.com/suzu-iro/
-// $dark-color-font: #c0c0c0; // https://irocore.com/gin-iro/
+$dark-color-font: #ededed; // https://irocore.com/gin-iro/
 // $dark-color-divider: #4d5158; // Discord
 // $dark-color-bg: #2f3136; // Discord
-// $dark-color-codebg: #414449; // GitHub
+$dark-color-codebg: #414449; // GitHub
 
+@font-face {
+  font-family: 'Helvetica Neue';
+  font-style: normal;
+  font-display: swap;
+  font-weight: 700;
+  // src: url('https://cdn.jsdelivr.net/gh/dreampulse/computer-modern-web-font@master/fonts.css')
+  // format('css');
+  // src: url('https://cdn.jsdelivr.net/gh/dsrkafuu/dsr-cdn-main@1/fonts/product_sans/product_sans_700.woff2')
+  //   format('woff2');
+}
+
+@font-face {
+  font-family: 'Cascadia Code';
+  font-style: normal;
+  font-display: swap;
+  font-weight: 400;
+  src: url('https://cdn.jsdelivr.net/gh/dsrkafuu/dsr-cdn-main@1/fonts/fira_code/fira_code_400.woff2')
+    format('woff2');
+}

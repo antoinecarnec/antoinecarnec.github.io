@@ -48,6 +48,7 @@ sourceURL = "https://github.com/antoinecarnec/antoinecarnec.github.io"
 # Word counter and read time indicator in post metadata
 showWordCounter = false
 showReadTime = false
+showDate = true
 
 # License in the footer
 showLicenseInFooter = false
@@ -66,7 +67,7 @@ og = ""                                          # This will use the image calle
 
 # Posts shown in homepage
 # mainSections = ["about", "post"] # TODO show about before anything else?
-mainSections = ["about", "post"]
+mainSections = ["post", "about"] # ["about", "post"]
 
 # Bangumi image chart id
 # bgmImageChart = "000000"
@@ -117,18 +118,18 @@ tag = "tags"
 name = "Home"
 url = "/"
 weight = 1
+# [[menu.nav]]
+# name = "Archives"
+# url = "/archives/"
+# weight = 2
 [[menu.nav]]
-name = "Archives"
-url = "/archives/"
-weight = 2
-[[menu.nav]]
-name = "About me"
+name = "About this site"
 url = "/about/"
 weight = 3
-[[menu.nav]]
-name = "Search"
-url = "/search/"
-weight = 4
+# [[menu.nav]]
+# name = "Search"
+# url = "/search/"
+# weight = 4
 # [[menu.nav]]
 # name = "RSS"
 # url = "/index.xml"
@@ -142,11 +143,10 @@ weight = 1
 name = "Linkedin"
 url = "https://linkedin.com/in/antoinecarnec"
 weight = 2
-# TODO get cv embedding working
-# [[menu.link]]
-# name = "CV"
-# url = "/content/cv/antoinecarnecCV.pdf"
-# weight = 3
+[[menu.link]] # TODO fix cv link to work from anywhere in the site
+name = "CV"
+url = "cv/antoinecarnecCV.pdf"
+weight = 3
 
 [build]
 noJSConfigInAssets = true
@@ -154,3 +154,4 @@ noJSConfigInAssets = true
 [security]
 enableInlineShortcodes = true
 
+math = true

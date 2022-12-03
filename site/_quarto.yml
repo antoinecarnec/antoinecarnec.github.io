@@ -1,0 +1,14 @@
+project:
+  type: hugo
+      
+format: 
+  hugo-md:
+    code-fold: true
+    html-math-mode: katex
+    default-image-extension: svg
+  
+execute: 
+  warning: false
+  freeze: auto
+
+# biliography: references.lib

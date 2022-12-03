@@ -1,5 +1,5 @@
 {
-  description = "A very basic flake";
+  description = "Antoine's personal website";
 
   inputs.nixpkgs.url = "nixpkgs/nixos-unstable";
 
@@ -20,6 +20,7 @@
                 "matplotlib"
                 "pandas"
                 "scipy"
+                "numpy"
               ];
             };
           }
@@ -31,6 +32,7 @@
     packages.x86_64-linux.default = pkgs.callPackage ./default.nix {};
 
     devShells.x86_64-linux.default = pkgs.mkShellNoCC {
+      builder = "${lib.getExe pkgs.bashInteractive}";
       buildInputs = with pkgs; [
         hugo
         quarto

@@ -1,17 +1,16 @@
 {
   pkgs,
   lib,
-  stdenv,
+  stdenvNoCC,
   ...
 }:
-pkgs.stdenv.mkDerivation rec {
+pkgs.stdenvNoCC.mkDerivation rec {
   pname = "antoinecarnec.github.io";
   version = "0.0.1";
   src = ./site;
-  # nativeBuildInputs = [
-  #   pkgs.breakpointHook
-  # ];
-  buildInputs = [pkgs.hugo pkgs.quarto pkgs.busybox];
+
+  buildInputs = with pkgs; [hugo quarto];
+  nativeBuildInputs = with pkgs; [coreutils];
   buildPhase = ''
     mkdir .cache
     mkdir .share

@@ -10,7 +10,13 @@
   rPackages,
   makeWrapper,
   python3,
-  pythonExtraPackages ? [],
+  pythonExtraPackages ? [
+    "numpy"
+    "matplotlib"
+    "pandas"
+    "scipy"
+    "numpy"
+  ],
   rExtraPackages ? [],
 }:
 stdenv.mkDerivation rec {
