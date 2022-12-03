@@ -1,9 +1,31 @@
+@_default:
+    just --list
+
+@new name:
+    #!/usr/bin/env bash
+    set -euo pipefail
+    post_dir="{{justfile_directory()}}/content/post/{{name}}"
+    mkdir "$post_dir"
+    touch "${post_dir}/post_dir.qmd"
+    $EDITOR "${post_dir}/post_dir.qmd"
+
 serve:
     #!/usr/bin/env bash
-    set -euxo pipefail
+    set -xeuo pipefail
     cd {{justfile_directory()}}
     start () { nohup ${@} > /dev/null 2> /dev/null & disown; }
     pkill hugo || true
     start hugo serve -p 1313
-    # pgrep hugo 2> /dev/null || start hugo serve -p 1313
     start firefox --new-window localhost:1313 2> /dev/null
+
+preview:
+    cd {{justfile_directory()}} && quarto preview
+
+edit:
+    $EDITOR {{justfile_directory()}}/config.toml
+
+#
+#
+# code-block-bg: true
+# code-block-border-left: "#31BAE9"
+#
