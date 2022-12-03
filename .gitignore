@@ -1,0 +1,8 @@
+site/.hugo_build.lock
+.hugo_build.lock
+.envrc
+site/.quarto
+site/.deno
+build
+result/
+.git_old/

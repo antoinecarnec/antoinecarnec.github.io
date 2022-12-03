@@ -1,0 +1,9 @@
+serve:
+    #!/usr/bin/env bash
+    set -euxo pipefail
+    cd {{justfile_directory()}}
+    start () { nohup ${@} > /dev/null 2> /dev/null & disown; }
+    pkill hugo || true
+    start hugo serve -p 1313
+    # pgrep hugo 2> /dev/null || start hugo serve -p 1313
+    start firefox --new-window localhost:1313 2> /dev/null
